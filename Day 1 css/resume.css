@@ -1,0 +1,21 @@
+#hym{
+    font-family: 'Verdana', sans-serif; 
+    font-size: 36px; 
+    color: #3498db; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+
+
+.b1{
+    color: red;
+}
+
+.b2{
+    color: darkgreen;
+}
+
+.b3{
+    color: rgb(4, 4, 120);
+}
