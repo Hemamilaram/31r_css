@@ -1,0 +1,36 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px;
+}
+.con{
+    border-style: dashed;
+    width: 500px;
+    height: 200px;
+    background-color:rgb(115, 176, 196);
+}
+.pad{
+    border-style: solid;
+    width: 600px;
+    height: 250px;
+    background-color: rgb(94, 198, 94);
+}
+
+.bor{
+    border-style: dashed;
+    width: 700px;
+    height: 300px;
+    background-color:rgb(231, 152, 124);
+}
+
+.mar{
+    border-style: solid;
+    width: 800px;
+    height: 350px;
+    background-color:rgb(227, 132, 97);
+}
+
+body{
+margin-top: 10%;
+}
