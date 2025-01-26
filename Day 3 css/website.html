@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar styling */
+        nav {
+            position: sticky; 
+            top: 0; 
+            background-color: #333; 
+            padding: 10px 20px; 
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none; /* Remove underline */
+            color: white; /* Set the text color to white */
+        }
+
+        nav ul {
+            display: flex; 
+            justify-content: space-between; 
+            list-style-type: none; 
+            s
+        }
+
+        nav li {
+            color: white; 
+            padding: 10px; 
+        }
+
+        nav li:first-child {
+            margin-right: auto; 
+        }
+
+        img {
+            width: 100%; 
+            height: auto; 
+            max-width: 100%; 
+        }
+
+        div img{
+            height: 580px;
+            width: 500px;
+        }
+
+
+  /* 1st div styling */
+
+    .vision1 {
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 10%; 
+     }
+     .child {
+    width: 50%; 
+     }
+
+    .child vis img {
+    width: 100%; 
+    height: auto;
+     }
+
+     .visi {
+    padding-left:20px; 
+    text-align: center;
+     }
+
+
+     /* second div styling */
+     .vision2 {
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 10%; 
+     }
+
+    .child two img {
+    width: 100%;
+    height: auto; 
+     }
+
+     .one {
+    padding-left: 20px; 
+     }
+
+      div ul {
+            justify-content: space-between; 
+            list-style-type: none; 
+      }
+      div h1{
+        text-align: center;
+      }
+
+      /*contact page*/
+
+      .last {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background-color: #f4f4f4;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 20px; }
+
+        .address { color: #1E3A8A; margin: 10px 0; }
+
+        p { margin-bottom: 20px; }
+
+        form {
+            width: 100%;
+            max-width: 600px;
+            padding: 0 10%;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover { background-color: #555; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Antoine’s Catering</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="imagesweb/hamburger.jpg" alt="hamburger"><br>
+
+
+    <div class="vision1" id="about">
+        <div class="child vis">
+            <img src="imagesweb/tablesetting2.jpg" alt="tablesetting">
+        </div>
+        <div class="child visi">
+            <h1>About Antoine’s</h1> <br> <br>
+            <h5>Tradition since 1840</h5> <br> <br>
+            <p>Welcome to Antoine’s, one of the oldest family-run restaurants in the United States, proudly serving the heart of New Orleans since 1840. I’m proud to say that Antoine’s has a deep-rooted history in this vibrant city, founded by my ancestor, Antoine Alciatore, a French immigrant with a passion for bringing authentic French dining traditions to New Orleans.</p> <br>
+            <p>One of our most famous creations is the Oysters Rockefeller, a dish invented right here in 1850. It’s still made today with our signature blend of spinach, herbs, and breadcrumbs, baked to perfection. It’s a taste of history on a plate!
+
+                We also take pride in our Filet de Boeuf en Croûte, a mouthwatering beef tenderloin wrapped in puff pastry, and our Pompano en Papillote, a delicate fish dish that’s been a favorite for decades.</p> <br>
+        </div>
+    </div>
+
+    <div class="vision2" id="menu">
+        <div class="child one">
+            <h1>Our Menu</h1><br><br>
+            <ul>
+                <li><strong>Antoine's Signature Bread Basket</strong></li><br>
+                <p>A delightful assortment of freshly baked artisanal breads and buttery croissants 6.50</p><br><br>
+                <li><strong>Vanilla Almond Granola with Fresh Berries</strong></li><br>
+                <p>A crunchy mix of honey-glazed oats, slivered almonds, and dried fruit, served with seasonal berries 8.00</p><br><br>
+                <li><strong>Golden Belgian Waffle</strong></li><br>
+                <p>Light and fluffy waffles, made with rich vanilla and malted flour, topped with powdered sugar 8.00</p><br><br>
+                <li><strong>Classic Scrambled Eggs with Herbs</strong></li><br>
+                <p>Fluffy scrambled eggs, infused with fresh thyme, rosemary, and a hint of garlic 8.50</p><br><br>
+            </ul>
+        </div>
+        <div class="child two">
+            <img src="imagesweb/tablesetting3.jpg" alt="tablesetting3">
+        </div>
+    </div>
+
+
+    <div class="last" id="contact">
+        <h1>Contact</h1><br>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+        <p class="address"><b>713 St Louis St, New Orleans, LA 70130, United States</b></p>
+        <p>You can also contact us by phone +1 504-581-4422 or email antonie@catering.com, or you can send us a message here:</p>
+        <form action="#" target="_blank">
+          <p><input class="details" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="details" type="number" placeholder="How many people" required name="People"></p>
+          <p><input class="details" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+          <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+          <p><button class="buttonsection" type="submit">SEND MESSAGE</button></p>
+        </form>
+      </div>
+
+
+</body>
+</html>
