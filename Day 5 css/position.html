@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-absolute</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(173, 173, 204);
+        }
+
+        .toplion{
+            position: relative;
+        }
+
+        #lion{
+            width: 100%;
+            height: auto;
+        }
+        img{
+            height: 250px;
+            width: 350px;
+        }
+
+        #lionp{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            background-color: transparent;
+              }
+        .allimages{
+            display: flex;
+            justify-content: space-around;
+            padding: 3%;
+                  }
+
+        .image1{
+            position: relative;
+        }
+        
+        p{
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            background-color: black;
+            font-size: larger;
+            font-family: sans-serif;
+            padding:2%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center; color: red; font-size: 60px;">WILD ANIMALS</h1>
+    <div class="toplion">
+        <img src="images/lion.jpg" alt="" id="lion">
+        <p id="lionp">King of the jungle</p>
+    </div>
+
+        <div class="allimages">
+            <div class="image1">
+                <img src="images/cheetah.jpg" alt="">
+                <p >Cheetah</p>
+                </div>
+    
+            <div class="image1">
+                <img src="images/deer.webp" alt="">
+                <p>Deer</p>
+            </div>
+    
+            <div class="image1">
+                <img src="images/lamb.jpeg" alt="">
+                    <p>Lamb</p>
+                </div>
+    
+            <div class="image1">
+                <img src="images/panda.jpg" alt="">
+                    <p>Panda</p>
+            </div>
+        </div>
+    
+        <div class="allimages">
+            <div class="image1">
+                <img src="images/rabbit.webp" alt="">     
+                   <p>Rabbit</p>
+            </div>
+    
+            <div class="image1">
+                <img src="images/squirrel.jpeg" alt="">
+                    <p>Squirrel</p>
+            </div>
+    
+            <div class="image1">
+                <img src="images/tiger.jpg" alt="">
+                    <p>Tiger</p>
+            </div>
+    
+            <div class="image1">
+                <img src="images/zebra.jpeg" alt="">
+                    <p>Zebra</p>
+            </div>
+        </div>
+</body>
+</html>
