@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            padding: 10px 150px 10px 150px;
+        }
+        .el1{
+            flex-basis: 50%;
+            padding-left: 70px;
+        }
+        .el2{
+            flex-basis: 50%;
+            padding-right: 70px;
+        }
+        div img{
+            width: 500px;
+            height: 600px;
+        }
+        #el3
+    {
+        padding-right: 35px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        background-color: beige;
+        width: 100%;
+        height: 60px;
+    }
+    .nav1{
+        display: flex;
+        gap: 10px;
+    }
+    span{
+        position: relative;
+    }
+    span img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    .hi{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        color: rgba(0, 0, 0, 0.667);
+    }
+
+    .last {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background-color: #f4f4f4;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 20px; }
+
+        .address { color: #1E3A8A; margin: 10px 0; }
+
+        p { margin-bottom: 20px; }
+
+        form {
+            width: 100%;
+            max-width: 600px;
+            padding: 0 10%;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover { background-color: #555; }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <h1>Antoine’s Catering</h1>
+        <div class="nav1">
+            <p>About</p>
+            <p>Services</p>
+            <p>Contact</p>
+        </div>
+    </nav>
+    <span>
+        <img src="imagesweb/hamburger.jpg" alt="">
+        <h1 class="hi">Antoine’s Catering</h1>
+    </span>
+    <div class="container">
+        <div class="el1">
+            <img src="imagesweb/tablesetting2.jpg" alt="">
+        </div>
+        <div class="el2">
+            <h1 style="text-align: center;">About Antoine’s</h1><br><br>
+            <p style="text-align: center;">Tradition since 1840</p><br>
+            <p> <b>Welcome to Antoine’s, one of the oldest family-run restaurants in the United States, proudly serving the heart of New Orleans since 1840. I’m proud to say that Antoine’s has a deep-rooted history in this vibrant city, founded by my ancestor, Antoine Alciatore, a French immigrant with a passion for bringing authentic French dining traditions to New Orleans.</b></p><br><br>
+            <p>One of our most famous creations is the Oysters Rockefeller, a dish invented right here in 1850. It’s still made today with our signature blend of spinach, herbs, and breadcrumbs, baked to perfection. It’s a taste of history on a plate! We also take pride in our Filet de Boeuf en Croûte, a mouthwatering beef tenderloin wrapped in puff pastry, and our Pompano en Papillote, a delicate fish dish that’s been a favorite for decades.</p> 
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="el1" id="el3">
+            <h1 style="text-align: center;">Our menu</h1><br>
+            <h4>Antoine's Signature Bread Basket</h4><br>
+            <p>A delightful assortment of freshly baked artisanal breads and buttery croissants 6.50
+
+            </p><br><br>
+            <h4>Vanilla Almond Granola with Fresh Berries
+            </h4><br>
+            <p>A crunchy mix of honey-glazed oats, slivered almonds, and dried fruit, served with seasonal berries 8.00
+
+            </p><br><br>
+            <h4>
+                Golden Belgian Waffle
+                </h4><br>
+            <p>Light and fluffy waffles, made with rich vanilla and malted flour, topped with powdered sugar 8.00
+
+            </p><br><br>
+            <h4>Classic Scrambled Eggs with Herbs
+            </h4><br>
+            <p>Fluffy scrambled eggs, infused with fresh thyme, rosemary, and a hint of garlic 8.50
+
+            </p>
+        </div>
+        <div class="el2">
+            <img src="imagesweb/tablesetting3.jpg" alt="">
+        </div>
+    </div>
+    <div class="last" id="contact">
+        <h1>Contact</h1><br>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+        <p class="address"><b>713 St Louis St, New Orleans, LA 70130, United States</b></p>
+        <p>You can also contact us by phone +1 504-581-4422 or email antonie@catering.com, or you can send us a message here:</p>
+        <form action="#" target="_blank">
+          <p><input class="details" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="details" type="number" placeholder="How many people" required name="People"></p>
+          <p><input class="details" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+          <p><input class="details" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+          <p><button class="buttonsection" type="submit">SEND MESSAGE</button></p>
+        </form>
+      </div>
+</body>
+</html>

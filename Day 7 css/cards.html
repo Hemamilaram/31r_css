@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kablammo&family=Lobster&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kablammo&family=Lobster&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kablammo&family=Limelight&family=Lobster&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kablammo&family=Limelight&family=Lobster&family=Monoton&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kablammo&family=Limelight&family=Lobster&family=Londrina+Shadow&family=Monoton&family=Monsieur+La+Doulaise&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 3px;
+            box-sizing: border-box;
+        }
+        span h1{
+            text-align: center;
+            text-transform: uppercase;
+            border: 2px solid black;
+            width: 60%;
+            margin: auto;
+            padding: 15px;
+            box-shadow: -2px -2px 14px 12px lightpink inset, 2px 2px 4px 3px rgb(49, 46, 46);
+                }
+
+        .space{
+            height: 320px;
+            width: 240px;
+            border: 2px solid black;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 60px;
+            box-shadow: 3px 3px 5px 4px black;
+            transition: 1.2s;
+                }
+        
+        .space:hover{
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        .card{
+            display: block;
+            text-align: center;
+            position: relative;
+            top: 40%;
+            font-size: 30px;
+                }
+
+        #un1, #un6, #un12{
+            background-color: lightblue;
+
+        }
+        #un2, #un5, #un10{
+            background-color: lightgoldenrodyellow;
+
+        }
+        #un3, #un8, #un11{
+            background-color: lightgreen;
+
+        }
+        #un4, #un7, #un9{
+            background-color: lightseagreen;
+
+        }  
+.kablammo, #un1:hover, #un7:hover {
+  font-family: "Kablammo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+}
+.monsieur-la-doulaise-regular, #un2:hover, #un8:hover {
+  font-family: "Monsieur La Doulaise", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.fascinate-regular, #un3:hover, #un9:hover {
+  font-family: "Fascinate", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.limelight-regular, #un4:hover, #un10:hover {
+  font-family: "Limelight", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.monoton-regular, #un5:hover, #un11:hover {
+  font-family: "Monoton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.londrina-shadow-regular, #un6:hover, #un12:hover {
+  font-family: "Londrina Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <span><h1>Journey Through the Cosmos</h1></span>
+    <div class="space" id="un1"><span class="card">Moon 🌕</span></div>
+    <div class="space" id="un2"><span class="card">Mars 🔴</span></div>
+    <div class="space" id="un3"><span class="card">Saturn 🌌</span></div>
+    <div class="space" id="un4"><span class="card">Galaxy 🌠</span></div>
+    <div class="space" id="un5"><span class="card">Nebula 🌟</span></div>
+    <div class="space" id="un6"><span class="card">Comet ☄️</span></div>
+    <div class="space" id="un7"><span class="card">Black Hole 🕳️</span></div>
+    <div class="space" id="un8"><span class="card">Asteroid 🌑</span></div>
+    <div class="space" id="un9"><span class="card">Rocket 🚀</span></div>
+    <div class="space" id="un10"><span class="card"> Alien 👽</span></div>
+    <div class="space" id="un11"><span class="card">Space Shuttle 🛸</span></div>
+    <div class="space" id="un12"><span class="card">Star 🌟</span></div>
+
+    <br><br>
+
+<h1>Card 1: Moon 🌕-Earth's Lunar Companion</h1>
+<h1>Card 2: Mars 🔴-The Red Planet</h1>
+<h1>Card 3: Saturn 🌌-Rings of Beauty</h1>
+<h1>Card 4: Galaxy 🌠-Infinite Stars</h1>
+<h1>Card 5: Nebula 🌟-Star-Forming Regions</h1>
+<h1>Card 6: Comet ☄️ -Visitors from the Depths</h1>
+<h1>Card 7: Black Hole 🕳️-Gravity's Grasp</h1>
+<h1>Card 8: Asteroid 🌑-Rocky Wanderers</h1>
+<h1>Card 9: Rocket 🚀-Exploration Begins Here</h1>
+<h1>Card 10: Alien 👽-The Search for Life</h1>
+<h1>Card 11: Space Shuttle 🛸-Gateway to the Stars</h1>
+<h1>Card 12: Star 🌟-The Light of the Universe</h1>
+</body>
+</html>
