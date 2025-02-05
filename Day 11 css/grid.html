@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span h1{
+            text-align: center;
+            text-transform: uppercase;
+            border: 2px solid black;
+            width: 60%;
+            margin: auto;
+            padding: 15px;
+            box-shadow: -2px -2px 14px 12px rgb(198, 78, 96) inset, 2px 2px 4px 3px rgb(49, 46, 46);
+                }
+        .container{
+            display: grid;
+            gap: 10px;
+            padding: 200px;
+            grid-template-columns: auto auto auto auto;
+            height: 650px;
+        }
+
+        .cl1{
+            background-color: green;
+            grid-row: 1/4;
+            grid-column: 1/2;
+        }
+        .cl2{
+            background-color: green;
+            grid-row: ;
+            grid-column: 2/4;
+        }
+        .cl3, .cl5, .cl7{
+            background-color: red;
+        
+        }
+        .cl4, .cl8{
+            background-color: yellow;
+        
+        }
+        .cl6{
+            background-color: green;
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+
+        /* Second layout css */
+        .container1{
+            display: grid;
+            gap: 10px;
+            padding: 200px;
+            grid-template-columns: auto auto auto auto;
+            height: 650px;
+        }
+
+        .cm1{
+            background-color: yellow;
+            grid-column: 1/5;
+        }
+        .cm2{
+            background-color: yellow;
+            grid-row: 2/5;
+        }
+        .cm3{
+            background-color: yellow;
+            grid-row: 2/4;
+            grid-column: 2/4;
+        }
+        .cm4{
+            background-color: yellow;
+            grid-row: 2/4;
+
+        }
+        .cm5{
+            background-color: yellow;
+            grid-column: 2/5;
+        }
+
+        /* third layout css */
+
+        .container2{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 200px;
+            gap: 10px;
+            height: 650px;
+            grid-template-areas:
+            "cu1 cu1 cu1 . "
+            "cu2 cu3 cu4 cu5"
+            "cu6 cu6 cu6 cu5"
+            "cu7 cu7 cu7 cu7";
+        }
+
+        .cu1{
+            background-color: lightcoral;
+            grid-area: cu1;
+        }
+        .cu2{
+            background-color: lightcoral;
+            grid-area: cu2;
+        }
+        .cu3{
+            background-color: lightcoral;
+            grid-area: cu3;
+        }
+        .cu4{
+            background-color: lightcoral;
+            grid-area: cu4;
+        }
+        .cu5{
+            background-color: lightcoral;
+            grid-area: cu5;
+        }
+        .cu6{
+            background-color: lightcoral;
+            grid-area: cu6;
+        }
+        .cu7{
+            background-color: lightcoral;
+            grid-area: cu7;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <span><h1>GRID LAYOUTS</h1></span>
+    <div class="container">
+        <div class="cl1">1</div>
+        <div class="cl2">2</div>
+        <div class="cl3">3</div>
+        <div class="cl4">4</div>
+        <div class="cl5">5</div>
+        <div class="cl6">6</div>
+        <div class="cl7">7</div>
+        <div class="cl8">8</div>
+    </div>
+
+    <!-- Second layout -->
+
+    <div class="container1">
+        <div class="cm1">1</div>
+        <div class="cm2">2</div>
+        <div class="cm3">3</div>
+        <div class="cm4">4</div>
+        <div class="cm5">5</div>
+    </div>
+
+    <!-- third layout -->
+     <div class="container2">
+        <div class="cu1">Header</div>
+        <div class="cu2">Small box</div>
+        <div class="cu3">Small box</div>
+        <div class="cu4">Small box</div>
+        <div class="cu5">Side bar</div>
+        <div class="cu6">Main content</div>
+        <div class="cu7">Footer</div>
+     </div>
+
+
+</body>
+</html>
